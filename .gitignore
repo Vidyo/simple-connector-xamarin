@@ -1,0 +1,26 @@
+#Autosave files
+*~
+
+# Build/test output
+obj
+bin
+test-results
+
+# libraries
+lib
+
+# Per-user data
+*.DS_Store
+*.sln.cache
+*.suo
+*.userprefs
+*.usertasks
+*.user
+
+# ReSharper
+*_Resharper.*
+*.Resharper
+
+# dotCover
+*.dotCover
+
