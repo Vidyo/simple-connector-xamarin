@@ -51,7 +51,7 @@ namespace SimpleVidyoConnector
 				};
 				connectButton.Click += delegate
 				{
-string token = "cHJvdmlzaW9uAFBoaWxseVdlYkAyOTkyYzQudmlkeW8uaW8ANjM2Njc1NzkyNTIAAGNlMDM3MDA4MTk3NzJkMjUxNWYxNDhlMjYyYjYwYTM4MjM5MGFhN2E1NWRiOTM1NGY1MGFiNjVmOWRiN2Q4NjhmODQyYTA5ZDRiYTY2Y2FhNzA1ZTExNDAzMGUzYTk3NA=="; //INSERT VALID TOKEN
+					string token = ""; //INSERT VALID TOKEN
 					vc.Connect("prod.vidyo.io", token, "Xamarin.Android User", "demoroom", this);
 				};
 				disconnectButton.Click += delegate
