@@ -12,6 +12,7 @@ git clone https://github.com/Vidyo/simple-connector-xamarin.git
 
 ## Overview
 The solution contains four projects: VidyoClientIOS (bindings library), VidyoClientAndroid (bindings library), SimpleVidyoConnectorIOS (iOS application project), SimpleVidyoConnectorAndroid (Android application project)
+> Note: the iOS bindings library is compatible with version 4.1.15.7 of the VidyoClient-iOSSDK
 
 ## Build and Run Application
 1. Open the solution SimpleVidyoConnector.sln in Xamarin Studio version 6.3 or later.
