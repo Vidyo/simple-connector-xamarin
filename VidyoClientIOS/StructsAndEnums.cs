@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using ObjCRuntime;
 
 namespace VidyoClientIOS
@@ -6,10 +6,10 @@ namespace VidyoClientIOS
 	[Native]
 	public enum ChatMessageSenderType : long
 	{
-		None,
+		User,
 		Room,
 		System,
-		User
+		None
 	}
 
 	[Native]
@@ -27,34 +27,36 @@ namespace VidyoClientIOS
 		Composing,
 		Gone,
 		Inactive,
-		None,
-		Paused
+		Paused,
+		None
 	}
 
 	[Native]
 	public enum DeviceAudioSignalType : long
 	{
-		Unprocessed,
-		Voice
+		Voice,
+		Unprocessed
 	}
 
 	[Native]
 	public enum DeviceState : long
 	{
 		Added,
-		ConfigureError,
-		ConfigureSuccess,
-		Controllable,
-		DefaultChanged,
-		Error,
-		NotControllable,
-		Paused,
 		Removed,
-		Resumed,
 		Started,
 		Stopped,
 		Suspended,
-		Unsuspended
+		Unsuspended,
+		InUse,
+		Available,
+		Paused,
+		Resumed,
+		Controllable,
+		NotControllable,
+		DefaultChanged,
+		ConfigureSuccess,
+		ConfigureError,
+		Error
 	}
 
 	[Native]
@@ -63,14 +65,14 @@ namespace VidyoClientIOS
 		LocalCamera,
 		LocalMicrophone,
 		LocalMonitor,
-		LocalRenderer,
-		LocalSpeaker,
 		LocalWindowShare,
+		LocalSpeaker,
+		LocalRenderer,
 		RemoteCamera,
 		RemoteMicrophone,
-		RemoteRenderer,
+		RemoteWindowShare,
 		RemoteSpeaker,
-		RemoteWindowShare
+		RemoteRenderer
 	}
 
 	[Native]
@@ -83,141 +85,149 @@ namespace VidyoClientIOS
 	[Native]
 	public enum MediaFormat : long
 	{
-		Mediaformat24bg,
-		MEDIAFORMAT_2vuy,
-		MEDIAFORMAT_420f,
-		MEDIAFORMAT_420v,
-		Argb,
-		Bgra,
-		Byr1,
-		Byr2,
-		Fl32,
-		Hdyc,
-		I420,
 		In16,
-		Jpeg,
-		M420,
-		Mjpg,
+		Fl32,
 		Null,
+		Wpcm,
+		I420,
+		Yu12,
+		Yuyv,
+		Yuy2,
+		yuvs,
+		MEDIAFORMAT_2vuy,
+		Uyvy,
+		Hdyc,
+		yuv2,
+		yuvu,
 		Nv12,
 		Nv21,
+		Mediaformat24bg,
+		raw,
+		Bgra,
 		Rgba,
-		Uyvy,
-		Wpcm,
-		Y8,
-		Yu12,
-		Yuy2,
-		Yuyv,
+		Argb,
+		Byr1,
+		Byr2,
+		Jpeg,
+		Mjpg,
 		dmb1,
-		dv,
+		dvsd,
+		dvhd,
+		dvsl,
 		dv25,
 		dv50,
 		dvh1,
-		dvhd,
-		dvsd,
-		dvsl,
-		raw,
-		yuv2,
-		yuvs,
-		yuvu
+		dv,
+		M420,
+		MEDIAFORMAT_420f,
+		MEDIAFORMAT_420v,
+		Y8
 	}
 
 	[Native]
 	public enum LocalCameraPosition : long
 	{
-		Back,
+		Unknown,
 		Front,
-		Unknown
+		Back
+	}
+
+	[Native]
+	public enum LocalCameraTradeOffProfile : long
+	{
+		High,
+		Medium,
+		Low
 	}
 
 	[Native]
 	public enum LocalWindowShareState : long
 	{
-		Closed,
-		Minimized,
-		MiscError,
+		Ok,
 		NotVisible,
-		Ok
+		Minimized,
+		Closed,
+		MiscError
 	}
 
 	[Native]
 	public enum LocalMonitorState : long
 	{
-		MiscError,
+		Ok,
 		NotVisible,
-		Ok
+		MiscError
 	}
 
 	[Native]
 	public enum LogLevel : long
 	{
-		Debug,
-		Enter,
-		Error,
 		Fatal,
+		Error,
+		Warning,
 		Info,
-		Invalid,
-		Leave,
-		Received,
+		Debug,
 		Sent,
-		Warning
+		Received,
+		Enter,
+		Leave,
+		Invalid
 	}
 
 	[Native]
 	public enum NetworkInterfaceFamily : long
 	{
+		Unspecified,
 		Ipv4,
-		Ipv6,
-		Unspecified
+		Ipv6
 	}
 
 	[Native]
 	public enum NetworkInterfaceState : long
 	{
-		Down,
 		Unknown,
-		Up
+		Up,
+		Down
 	}
 
 	[Native]
 	public enum NetworkInterfaceTransportType : long
 	{
-		Data,
+		Signaling,
 		Media,
-		Signaling
+		Data
 	}
 
 	[Native]
 	public enum NetworkInterfaceType : long
 	{
-		Loopback,
-		NotApplicable,
-		Other,
-		Tunneled,
-		WiFi,
 		Wired,
-		Wwan
+		WiFi,
+		Wwan,
+		Loopback,
+		Tunneled,
+		Other,
+		NotApplicable
 	}
 
 	[Native]
 	public enum ContactPresenceState : long
 	{
-		Available,
-		Away,
+		Unavailable,
 		DoNotDisturb,
 		ExtendedAway,
-		InterestedInChat,
-		Unavailable
+		Away,
+		Available,
+		InterestedInChat
 	}
 
 	[Native]
 	public enum ContactSubscriptionState : long
 	{
-		AwaitingApproval,
+		Unavailable,
 		NotSubscribed,
 		Preapproved,
-		Subscribed,
-		Unavailable
+		AwaitingApproval,
+		Subscribed
 	}
 
 	[Native]
@@ -230,9 +240,9 @@ namespace VidyoClientIOS
 	[Native]
 	public enum RemoteCameraPosition : long
 	{
-		Back,
+		Unknown,
 		Front,
-		Unknown
+		Back
 	}
 
 	[Native]
@@ -245,56 +255,64 @@ namespace VidyoClientIOS
 	[Native]
 	public enum ConnectorDisconnectReason : long
 	{
+		Disconnected,
 		ConnectionLost,
 		ConnectionTimeout,
-		Disconnected,
-		MiscError,
+		NoResponse,
+		Terminated,
 		MiscLocalError,
 		MiscRemoteError,
-		NoResponse,
-		Terminated
+		MiscError
 	}
 
 	[Native]
 	public enum ConnectorFailReason : long
 	{
-		Banned,
 		ConnectionFailed,
 		ConnectionLost,
 		ConnectionTimeout,
-		InvalidResourceId,
+		NoResponse,
+		Terminated,
 		InvalidToken,
-		MediaFailed,
+		UnableToCreateResource,
+		NoResponseFromResource,
+		InvalidResourceId,
+		ResourceFull,
+		NotMember,
+		Banned,
 		MediaNotEnabled,
-		MiscError,
+		MediaFailed,
 		MiscLocalError,
 		MiscRemoteError,
-		NoResponse,
-		NoResponseFromResource,
-		NotMember,
-		ResourceFull,
-		Terminated,
-		UnableToCreateResource
+		MiscError
 	}
 
 	[Native]
 	public enum ConnectorMode : long
 	{
-		Background,
 		Default,
-		Foreground
+		Foreground,
+		Background
 	}
 
 	[Native]
 	public enum ConnectorState : long
 	{
-		Connected,
-		ConnectingToResource,
-		EnablingMedia,
+		Idle,
+		Ready,
 		EstablishingConnection,
 		FindingResource,
-		Idle,
-		Ready
+		ConnectingToResource,
+		EnablingMedia,
+		Connected
+	}
+
+	[Native]
+	public enum ConnectorTradeOffProfile : long
+	{
+		High,
+		Medium,
+		Low
 	}
 
 	[Native]
