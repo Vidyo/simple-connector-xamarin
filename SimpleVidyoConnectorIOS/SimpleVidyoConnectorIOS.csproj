@@ -110,12 +110,203 @@
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\AudioFrame.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\AudioFrame.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\BandwidthSummaryStats.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\BandwidthSummaryStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\CalendarCreateResult.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\CalendarCreateResult.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\CalendarFeedback.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\CalendarFeedback.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\CalendarManagerDefaultServices.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\CalendarManagerDefaultServices.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\CalendarManagerFeedback.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\CalendarManagerFeedback.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\CalendarServiceCode.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\CalendarServiceCode.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\CalendarServiceStatus.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\CalendarServiceStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\CalendarState.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\CalendarState.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\ChatMessage.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\ChatMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\Connector.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\Connector.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\ConnectorPKG.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\ConnectorPKG.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\Contact.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\Contact.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\ContactInfo.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\ContactInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\Device.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\Device.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\EndpointStats.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\EndpointStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\FormField.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\FormField.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\FormFieldOption.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\FormFieldOption.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\FormFieldTextWrapMode.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\FormFieldTextWrapMode.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\FormFieldType.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\FormFieldType.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\Gateway.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\Gateway.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\LatencyTestDataStats.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\LatencyTestDataStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\LatencyTestStats.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\LatencyTestStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\LocalCamera.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\LocalCamera.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\LocalMicrophone.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\LocalMicrophone.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\LocalMicrophoneStats.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\LocalMicrophoneStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\LocalMonitor.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\LocalMonitor.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\LocalRenderer.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\LocalRenderer.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\LocalRendererStats.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\LocalRendererStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\LocalRendererStreamStats.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\LocalRendererStreamStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\LocalSpeaker.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\LocalSpeaker.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\LocalSpeakerStats.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\LocalSpeakerStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\LocalSpeakerStreamStats.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\LocalSpeakerStreamStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\LocalVideoSourceStats.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\LocalVideoSourceStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\LocalWindowShare.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\LocalWindowShare.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\LogRecord.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\LogRecord.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\Logger.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\Logger.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\MediaConnectionTransportInfo.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\MediaConnectionTransportInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\MediaFormat.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\MediaFormat.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\Meeting.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\Meeting.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\MeetingActionResult.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\MeetingActionResult.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\MeetingAttendee.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\MeetingAttendee.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\MeetingSearchResult.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\MeetingSearchResult.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\MeetingType.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\MeetingType.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\NetworkInterface.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\NetworkInterface.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\NetworkInterfaceStats.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\NetworkInterfaceStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\Participant.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\Participant.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\ParticipantGenerationStats.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\ParticipantGenerationStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\ParticipantStats.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\ParticipantStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\RateShaperStats.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\RateShaperStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\RemoteCamera.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\RemoteCamera.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\RemoteMicrophone.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\RemoteMicrophone.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\RemoteMicrophoneStats.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\RemoteMicrophoneStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\RemoteRenderer.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\RemoteRenderer.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\RemoteRendererStreamStats.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\RemoteRendererStreamStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\RemoteSpeaker.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\RemoteSpeaker.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\RemoteSpeakerStreamStats.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\RemoteSpeakerStreamStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\RemoteVideoSourceStats.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\RemoteVideoSourceStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\RemoteWindowShare.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\RemoteWindowShare.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\RoomStats.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\RoomStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\Statistics.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\Statistics.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\UserStats.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\UserStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\VideoCapability.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\VideoCapability.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\VideoFrame.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\VideoFrame.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\VidyoClientIOS\VidyoClientIOS.csproj">
-      <Project>{A0AD09CC-39CB-4270-9431-1C54BB3DCA58}</Project>
-      <Name>VidyoClientIOS</Name>
-    </ProjectReference>
+    <BundleResource Include="..\VidyoClient-iOSSDK\lib\ios\libVidyoClient.dylib">
+      <Link>libVidyoClient.dylib</Link>
+    </BundleResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

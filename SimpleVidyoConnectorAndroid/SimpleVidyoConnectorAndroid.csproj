@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>SimpleVidyoConnector</RootNamespace>
     <AssemblyName>SimpleVidyoConnector</AssemblyName>
-    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -47,6 +47,198 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\AudioFrame.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\AudioFrame.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\BandwidthSummaryStats.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\BandwidthSummaryStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\CalendarCreateResult.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\CalendarCreateResult.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\CalendarFeedback.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\CalendarFeedback.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\CalendarManagerDefaultServices.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\CalendarManagerDefaultServices.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\CalendarManagerFeedback.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\CalendarManagerFeedback.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\CalendarServiceCode.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\CalendarServiceCode.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\CalendarServiceStatus.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\CalendarServiceStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\CalendarState.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\CalendarState.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\ChatMessage.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\ChatMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\Connector.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\Connector.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\ConnectorPKG.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\ConnectorPKG.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\Contact.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\Contact.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\ContactInfo.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\ContactInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\Device.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\Device.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\EndpointStats.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\EndpointStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\FormField.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\FormField.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\FormFieldOption.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\FormFieldOption.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\FormFieldTextWrapMode.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\FormFieldTextWrapMode.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\FormFieldType.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\FormFieldType.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\Gateway.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\Gateway.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\LatencyTestDataStats.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\LatencyTestDataStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\LatencyTestStats.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\LatencyTestStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\LocalCamera.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\LocalCamera.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\LocalMicrophone.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\LocalMicrophone.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\LocalMicrophoneStats.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\LocalMicrophoneStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\LocalMonitor.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\LocalMonitor.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\LocalRenderer.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\LocalRenderer.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\LocalRendererStats.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\LocalRendererStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\LocalRendererStreamStats.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\LocalRendererStreamStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\LocalSpeaker.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\LocalSpeaker.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\LocalSpeakerStats.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\LocalSpeakerStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\LocalSpeakerStreamStats.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\LocalSpeakerStreamStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\LocalVideoSourceStats.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\LocalVideoSourceStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\LocalWindowShare.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\LocalWindowShare.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\LogRecord.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\LogRecord.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\Logger.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\Logger.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\MediaConnectionTransportInfo.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\MediaConnectionTransportInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\MediaFormat.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\MediaFormat.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\Meeting.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\Meeting.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\MeetingActionResult.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\MeetingActionResult.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\MeetingAttendee.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\MeetingAttendee.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\MeetingSearchResult.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\MeetingSearchResult.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\MeetingType.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\MeetingType.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\NetworkInterface.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\NetworkInterface.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\NetworkInterfaceStats.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\NetworkInterfaceStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\Participant.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\Participant.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\ParticipantGenerationStats.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\ParticipantGenerationStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\ParticipantStats.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\ParticipantStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\RateShaperStats.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\RateShaperStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\RemoteCamera.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\RemoteCamera.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\RemoteMicrophone.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\RemoteMicrophone.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\RemoteMicrophoneStats.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\RemoteMicrophoneStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\RemoteRenderer.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\RemoteRenderer.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\RemoteRendererStreamStats.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\RemoteRendererStreamStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\RemoteSpeaker.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\RemoteSpeaker.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\RemoteSpeakerStreamStats.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\RemoteSpeakerStreamStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\RemoteVideoSourceStats.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\RemoteVideoSourceStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\RemoteWindowShare.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\RemoteWindowShare.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\RoomStats.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\RoomStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\Statistics.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\Statistics.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\UserStats.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\UserStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\VideoCapability.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\VideoCapability.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\VideoFrame.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\VideoFrame.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -64,13 +256,25 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
-    <Folder Include="VidyoClient\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\VidyoClientAndroid\VidyoClientAndroid.csproj">
-      <Project>{805FD654-6948-455D-B232-7016459C4145}</Project>
-      <Name>VidyoClientAndroid</Name>
-    </ProjectReference>
+    <AndroidNativeLibrary Include="..\VidyoClient-AndroidSDK\lib\android\arm64-v8a\libVidyoClient.so">
+      <Link>VidyoClient-AndroidSDK\lib\android\arm64-v8a\libVidyoClient.so</Link>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="..\VidyoClient-AndroidSDK\lib\android\armeabi-v7a\libVidyoClient.so">
+      <Link>VidyoClient-AndroidSDK\lib\android\armeabi-v7a\libVidyoClient.so</Link>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="..\VidyoClient-AndroidSDK\lib\android\x86\libVidyoClient.so">
+      <Link>VidyoClient-AndroidSDK\lib\android\x86\libVidyoClient.so</Link>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Include="..\VidyoClient-AndroidSDK\lib\android\x86_64\libVidyoClient.so">
+      <Link>VidyoClient-AndroidSDK\lib\android\x86_64\libVidyoClient.so</Link>
+    </AndroidNativeLibrary>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidJavaLibrary Include="..\VidyoClient-AndroidSDK\lib\android\vidyoclient.jar">
+      <Link>VidyoClient-AndroidSDK\lib\android\vidyoclient.jar</Link>
+    </AndroidJavaLibrary>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

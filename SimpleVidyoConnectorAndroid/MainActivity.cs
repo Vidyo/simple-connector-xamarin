@@ -3,16 +3,14 @@ using Android.Widget;
 using Android.OS;
 using System;
 using Android.Content.PM;
-using Com.Vidyo.VidyoClient.Connector;
-using Com.Vidyo.VidyoClient.Device;
-using Com.Vidyo.VidyoClient.Endpoint;
+using VidyoClient;
 
 namespace SimpleVidyoConnector
 {
 [Activity(Label = "SimpleVidyoConnector", MainLauncher = true, Icon = "@mipmap/icon", ConfigurationChanges = ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
-	public class MainActivity : Activity, VidyoConnector.IConnect, VidyoConnector.IRegisterLocalCameraEventListener, VidyoConnector.IRegisterRemoteCameraEventListener
+	public class MainActivity : Activity, Connector.IConnect, Connector.IRegisterLocalCameraEventListener, Connector.IRegisterRemoteCameraEventListener
 	{
-		VidyoConnector vc;
+		Connector vc;
 		FrameLayout videoFrame;
 
 		protected override void OnCreate(Bundle savedInstanceState)
@@ -23,14 +21,14 @@ namespace SimpleVidyoConnector
 			SetContentView(Resource.Layout.Main);
 
 			// Set application context and initialize VidyoClient library
-			Connector.SetApplicationUIContext(this);
-			Connector.Initialize();
+			ConnectorPKG.SetApplicationUIContext(this);
+			ConnectorPKG.Initialize();
 
 			videoFrame = FindViewById<FrameLayout>(Resource.Id.videoFrame);
 			try
 			{
 				// Construct VidyoConnector
-				vc = new VidyoConnector(videoFrame, VidyoConnector.VidyoConnectorViewStyle.VIDYOCONNECTORVIEWSTYLEDefault, 16, "warning info@VidyoConnector info@VidyoClient", "", 0);
+				vc = new Connector(videoFrame.Handle, Connector.ConnectorViewStyle.ConnectorviewstyleDefault, 15, "warning info@VidyoConnector info@VidyoClient", "", 0);
 
 				// Register for local and remote camera event listeners
 				if (!vc.RegisterLocalCameraEventListener(this))
@@ -47,7 +45,7 @@ namespace SimpleVidyoConnector
 				// Delegates when the buttons are clicked
 				showPreviewButton.Click += delegate
 				{
-					vc.ShowViewAt(videoFrame, 0, 0, videoFrame.Width, videoFrame.Height);
+					vc.ShowViewAt(videoFrame.Handle, 0, 0, (uint)videoFrame.Width, (uint)videoFrame.Height);
 				};
 				connectButton.Click += delegate
 				{
@@ -73,32 +71,32 @@ namespace SimpleVidyoConnector
 		protected override void OnRestart()
 		{
 			base.OnRestart();
-			vc.SetMode(VidyoConnector.VidyoConnectorMode.VIDYOCONNECTORMODEForeground);
+			vc.SetMode(Connector.ConnectorMode.ConnectormodeForeground);
 		}
 
 		// The app is going to the background
 		protected override void OnStop()
 		{
 			base.OnStop();
-			vc.SetMode(VidyoConnector.VidyoConnectorMode.VIDYOCONNECTORMODEBackground);
+			vc.SetMode(Connector.ConnectorMode.ConnectormodeBackground);
 		}
 
 		// The app is terminating
 		protected override void OnDestroy()
 		{
 			vc.Disable();
-			Connector.Uninitialize();
+			ConnectorPKG.Uninitialize();
 			base.OnDestroy();
 		}
 
 		// IConnect callbacks
-		public void OnDisconnected(VidyoConnector.VidyoConnectorDisconnectReason p0)
+		public void OnDisconnected(Connector.ConnectorDisconnectReason reason) 
 		{
-			Console.WriteLine("OnDisconnected: " + p0);
+			Console.WriteLine("OnDisconnected: " + reason);
 		}
-		public void OnFailure(VidyoConnector.VidyoConnectorFailReason p0)
+		public void OnFailure(Connector.ConnectorFailReason reason)
 		{
-			Console.WriteLine("OnFailure: " + p0);
+			Console.WriteLine("OnFailure: " + reason);
 		}
 		public void OnSuccess()
 		{
@@ -106,35 +104,38 @@ namespace SimpleVidyoConnector
 		}
 
 		// IRegisterLocalCameraEventListener callbacks
-		public void OnLocalCameraAdded(VidyoLocalCamera localCamera)
+		public void OnLocalCameraAdded(LocalCamera localCamera)
 		{
-			Console.WriteLine("OnLocalCameraAdded: " + localCamera.Name);
+			Console.WriteLine("OnLocalCameraAdded");
 		}
-		public void OnLocalCameraRemoved(VidyoLocalCamera localCamera)
+
+		public void OnLocalCameraRemoved(LocalCamera localCamera)
 		{
-			Console.WriteLine("OnLocalCameraRemoved: " + localCamera.Name);
+			Console.WriteLine("OnLocalCameraRemoved");
 		}
-		public void OnLocalCameraSelected(VidyoLocalCamera localCamera)
+
+		public void OnLocalCameraSelected(LocalCamera localCamera)
 		{
-			Console.WriteLine("OnLocalCameraSelected: " + localCamera.Name);
+			Console.WriteLine("OnLocalCameraSelected");
 		}
-		public void OnLocalCameraStateUpdated(VidyoLocalCamera localCamera, VidyoDevice.VidyoDeviceState state)
+
+		public void OnLocalCameraStateUpdated(LocalCamera localCamera, VidyoClient.Device.DeviceState state)
 		{
-			Console.WriteLine("OnLocalCameraStateUpdated: " + localCamera.Name + " , state : " + state);
+			Console.WriteLine("OnLocalCameraStateUpdated");
 		}
 
 		// IRegisterRemoteCameraEventListener
-		public void OnRemoteCameraAdded(VidyoRemoteCamera remoteCamera, VidyoParticipant participant)
+		public void OnRemoteCameraAdded(RemoteCamera remoteCamera, Participant participant)
 		{
-			Console.WriteLine("OnRemoteCameraAdded: " + remoteCamera.Name);
+			Console.WriteLine("OnRemoteCameraAdded: " + remoteCamera.GetName());
 		}
-		public void OnRemoteCameraRemoved(VidyoRemoteCamera remoteCamera, VidyoParticipant participant)
+		public void OnRemoteCameraRemoved(RemoteCamera remoteCamera, Participant participant)
 		{
-			Console.WriteLine("OnRemoteCameraRemoved: " + remoteCamera.Name);
+			Console.WriteLine("OnRemoteCameraRemoved: " + remoteCamera.GetName());
 		}
-		public void OnRemoteCameraStateUpdated(VidyoRemoteCamera remoteCamera, VidyoParticipant participant, VidyoDevice.VidyoDeviceState state)
+		public void OnRemoteCameraStateUpdated(RemoteCamera remoteCamera, Participant participant, Device.DeviceState state)
 		{
-			Console.WriteLine("OnRemoteCameraStateUpdated: " + remoteCamera.Name + " , state : " + state);
+			Console.WriteLine("OnRemoteCameraStateUpdated: " + remoteCamera.GetName() + " , state : " + state);
 		}
 	}
 }

@@ -8,6 +8,11 @@ test-results
 
 # libraries
 lib
+packages
+
+# SDKs acquired from developer.vidyo.io
+VidyoClient-AndroidSDK
+VidyoClient-iOSSDK
 
 # Per-user data
 *.DS_Store
