@@ -239,6 +239,45 @@
     <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\VideoFrame.cs">
       <Link>VidyoClient-AndroidSDK\include\csharp\VideoFrame.cs</Link>
     </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\Calendar.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\Calendar.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\CalendarConnProps.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\CalendarConnProps.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\CalendarManager.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\CalendarManager.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\Call.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\Call.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\Endpoint.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\Endpoint.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\EndpointPKG.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\EndpointPKG.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\LogDataStats.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\LogDataStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\LogStats.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\LogStats.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\Room.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\Room.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\RoomInfo.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\RoomInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\User.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\User.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\VirtualDeviceManager.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\VirtualDeviceManager.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\VirtualShareManager.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\VirtualShareManager.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
