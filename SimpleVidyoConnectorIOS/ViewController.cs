@@ -7,7 +7,7 @@ namespace SimpleVidyoConnectorIOS
 {
 	public partial class ViewController : UIViewController, Connector.IConnect, Connector.IRegisterLocalCameraEventListener, Connector.IRegisterRemoteCameraEventListener
 	{
-		Connector vc = null;
+		Connector vc;
 
 		protected ViewController(IntPtr handle) : base(handle)
 		{
@@ -80,21 +80,21 @@ namespace SimpleVidyoConnectorIOS
 		// The app is about to enter into the background
 		void AppDidEnterBackground(Foundation.NSNotification notification)
 		{
-			Console.WriteLine("Received a notification UIApplication: ", notification);
+			Console.WriteLine("Received a notification UIApplication: " + notification);
 			vc.SetMode(Connector.ConnectorMode.ConnectormodeBackground);
 		}
 
 		// The app is about to enter into the foreground
 		void AppWillEnterForeground(Foundation.NSNotification notification)
 		{
-			Console.WriteLine("Received a notification UIApplication: ", notification);
+			Console.WriteLine("Received a notification UIApplication: " + notification);
 			vc.SetMode(Connector.ConnectorMode.ConnectormodeForeground);
 		}
 
 		// The app is terminating
 		void AppWillTerminate(Foundation.NSNotification notification)
 		{
-			Console.WriteLine("Received a notification UIApplication: ", notification);
+			Console.WriteLine("Received a notification UIApplication: " + notification);
 
 			// Deregister from any/all notifications.
 			Foundation.NSNotificationCenter.DefaultCenter.RemoveObserver(this);
