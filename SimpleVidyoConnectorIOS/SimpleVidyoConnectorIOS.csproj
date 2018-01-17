@@ -44,6 +44,7 @@
     <MtouchArch>ARMv7, ARM64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
 <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+<CodesignProvision></CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>pdbonly</DebugType>
@@ -343,9 +344,35 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="..\VidyoClient-iOSSDK\lib\ios\libVidyoClient.dylib">
-      <Link>libVidyoClient.dylib</Link>
-    </BundleResource>
+    <NativeReference Include="..\VidyoClient-iOSSDK\lib\ios\libcrypto.a">
+      <Kind>Static</Kind>
+      <SmartLink>False</SmartLink>
+    </NativeReference>
+    <NativeReference Include="..\VidyoClient-iOSSDK\lib\ios\libopus.a">
+      <Kind>Static</Kind>
+      <SmartLink>False</SmartLink>
+    </NativeReference>
+    <NativeReference Include="..\VidyoClient-iOSSDK\lib\ios\libspeex.a">
+      <Kind>Static</Kind>
+      <SmartLink>False</SmartLink>
+    </NativeReference>
+    <NativeReference Include="..\VidyoClient-iOSSDK\lib\ios\libsrtp.a">
+      <Kind>Static</Kind>
+      <SmartLink>False</SmartLink>
+    </NativeReference>
+    <NativeReference Include="..\VidyoClient-iOSSDK\lib\ios\libssl.a">
+      <Kind>Static</Kind>
+      <SmartLink>False</SmartLink>
+    </NativeReference>
+    <NativeReference Include="..\VidyoClient-iOSSDK\lib\ios\libVidyoClient.a">
+      <Kind>Static</Kind>
+      <SmartLink>False</SmartLink>
+      <Frameworks>AudioToolbox AVFoundation CoreLocation CoreMedia SystemConfiguration UIKit</Frameworks>
+    </NativeReference>
+    <NativeReference Include="..\VidyoClient-iOSSDK\lib\ios\VPX.framework">
+      <Kind>Framework</Kind>
+      <SmartLink>False</SmartLink>
+    </NativeReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
