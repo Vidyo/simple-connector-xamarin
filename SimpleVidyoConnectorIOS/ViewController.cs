@@ -22,7 +22,8 @@ namespace SimpleVidyoConnectorIOS
 			// Authorize this app to use the microphone and camera
 			AuthorizeMediaUse();
 
-			// Initialize VidyoClient library
+			// Initialize VidyoClient library.
+			// This should be called only once throughout the lifetime of the app.
 			bool status = ConnectorPKG.Initialize();
 			Console.WriteLine("VidyoClientInitalize status = " + status);
 
@@ -102,7 +103,8 @@ namespace SimpleVidyoConnectorIOS
 			// Set the VidyoConnector to nil so it is garbage collected
 			vc = null;
 
-			// Uninitialize VidyoConnector
+			// Uninitialize VidyoClient library.
+			// This should be called only once throughout the lifetime of the app.
 			ConnectorPKG.Uninitialize();
 		}
 
