@@ -9,15 +9,21 @@ The SimpleVidyoConnector solution contains two projects:
 2. SimpleVidyoConnectorIOS     : a Xamarin.iOS application containing a simple Vidyo.io integration
 
 ## Acquire VidyoClient iOS and Android SDKs
+> Note: Highlighted steps are very important because samples already contain configurations specified below and both SDK packages are linked as relative folders located in VidyoConnector-xamarin directory.
+
 1. Download the latest Vidyo.io iOS SDK package: https://static.vidyo.io/latest/package/VidyoClient-iOSSDK.zip
-2. Move the unzipped VidyoClient-iOSSDK folder to the simple-connector-xamarin directory.
+2. **Move the unzipped VidyoClient-iOSSDK folder to the simple-connector-xamarin directory.**
 3. Download the latest Vidyo.io Android SDK package: https://static.vidyo.io/latest/package/VidyoClient-AndroidSDK.zip
-4. Move the unzipped VidyoClient-AndroidSDK folder to the simple-connector-xamarin directory.
+4. **Move the unzipped VidyoClient-AndroidSDK folder to the simple-connector-xamarin directory.**
 
 > Note: SDK version 4.1.20.3 or later is required
 
 ## Importing VidyoClient iOS SDK
+> Note: the below steps are already performed in the SimpleVidyoConnector.iOS project in the SimpleVidyoConnector solution. These instructions are intended to show how a developer would import the library into their own application. Therefore, do not perform these steps in this application, which would lead to duplicated libraries and compilation errors. However, one important step is necessary when building on Windows (as opposed to macOS), which is to prevent the iOS native frameworks from being linked. This can be achieved by doing the following: in the solution window under the Xamarin.iOS project, expand "Native references", select "libVidyoClient.a", and press F4 to open specific properties window. Remove all linked "Frameworks" (AudioToolbox, AVFoundation, etc). Save the solution. After you have verified that you placed the SDK in the proper folder, please skip to the "Build and Run Application" section.
+
 To use the VidyoClient SDK in a Xamarin.iOS app, perform the following steps:
+
+#### macOS
 1.  In the Solution pad, right-click on the Xamarin.iOS project and select "Add" > "Add Existing Folder".
 2.  In the file-selection dialog, browse to project subdirectory "VidyoClient-iOSSDK".
 3.  Click "Open" to finish the file selection.
@@ -30,10 +36,26 @@ To use the VidyoClient SDK in a Xamarin.iOS app, perform the following steps:
 10. In that "Properties" pad, go to the "Frameworks" field.
 11. Enter the following list of iOS frameworks from Apple:  AudioToolbox AVFoundation CoreLocation CoreMedia SystemConfiguration UIKit
 
-> Note: the above steps are already performed in the SimpleVidyoConnectorIOS project in the SimpleVidyoConnector solution.
+#### Windows
+
+1. In the solution toolbar, find "Show All Files" option and select it.
+2. In the solution window, expand grayed "VidyoClient-iOSSDK" folder to "include > csharp", right-click on "csharp" folder and choose "Include in Project" option.
+3. In the solution window, right-click on the Xamarin.iOS project and select "Add Native Reference" > "Add Native Static Library"
+4. In the file-selection dialog, browse to project subdirectory“VidyoClient-iOSSDK/lib/ios”
+5. From that directory, add one by one  all 6 static library files `lib*.a`. You have to do it 6 times as multi-include may not be allowed.
+6. In the solution window, right-click on the Xamarin.iOS project and select "Add Native Reference" > "Add Native Framework Library"
+7. In the folder-selection dialog, browse to project subdirectory“VidyoClient-iOSSDK/lib/ios”
+8. Select VPX.framework folder. Click OK.
+
+> Note: Linking of iOS Frameworks does not take place on Windows platform.
 
 ## Importing VidyoClient Android SDK
+> Note: the below steps are already performed in the SimpleVidyoConnector.Android project in the SimpleVidyoConnector solution. These instructions are intended to show how a developer would import the library into their own application. Therefore, do not perform these steps in this application, which would lead to duplicated libraries and compilation errors. For this sample, please make sure you have placed the SDK in the right folder and then skip to the "Build and Run Application" section.
+
 To use the VidyoClient SDK in a Xamarin.Android app, perform the following steps:
+
+#### macOS
+
 1. In the Solution pad, right-click on the Xamarin.Android project and select "Add" > "Add Existing Folder".
 2. In the file-selection dialog, browse to project subdirectory "VidyoClient-AndroidSDK".
 3. Click "Open" to finish the file selection.
@@ -44,7 +66,15 @@ To use the VidyoClient SDK in a Xamarin.Android app, perform the following steps
 8. Under each of the 4 architecture folders (arm64-v8a, armeabi-v7a, x86, x86_64), right-click "libVidyoClient.so"; and choose "Properties".
 9. In that "Properties" pad, go to the "Build action" field and populate it with "AndroidNativeLibrary".
 
-> Note: the above steps are already performed in the SimpleVidyoConnectorAndroid project in the SimpleVidyoConnector solution.
+#### Windows
+
+1. In the solution toolbar, find "Show All Files" option and switch it.
+2. In the solution window, expand grayed "VidyoClient-AndroidSDK" folder to "include > csharp", right-click on "csharp" folder and choose "Include in Project" option.
+3. In the solution window, expand grayed "VidyoClient-AndroidSDK" folder to "lib > android", right-click on "android" folder and choose "Include in Project" option.
+4. In the solution window, expand "android" folder, right-click on "vidyoclient.jar" and choose "Properties".
+5. In that "Properties" window, go to the "Build action" field and populate it with "AndroidJavaLibrary".
+6. In the expanded "android" folder under each of the 4 architecture folders (arm64-v8a, armeabi-v7a, x86, x86_64), right-click "libVidyoClient.so"; and choose "Properties".
+7. In that "Properties" window, go to the "Build action" field and populate it with "AndroidNativeLibrary".
 
 ## Build and Run Application
 1. Open SimpleVidyoConnector.sln in either Visual Studio or Xamarin Studio version 6.3 or later.
@@ -53,4 +83,3 @@ To use the VidyoClient SDK in a Xamarin.Android app, perform the following steps
 4. Connect an iOS or Android device to the computer via USB.
 5. Select the iOS or Android device as the build target of the application.
 6. Build and run the application on the iOS or Android device.
-
