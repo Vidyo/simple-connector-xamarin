@@ -53,20 +53,11 @@
     <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\BandwidthSummaryStats.cs">
       <Link>VidyoClient-AndroidSDK\include\csharp\BandwidthSummaryStats.cs</Link>
     </Compile>
-    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\CalendarCreateResult.cs">
-      <Link>VidyoClient-AndroidSDK\include\csharp\CalendarCreateResult.cs</Link>
-    </Compile>
     <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\CalendarFeedback.cs">
       <Link>VidyoClient-AndroidSDK\include\csharp\CalendarFeedback.cs</Link>
     </Compile>
-    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\CalendarManagerDefaultServices.cs">
-      <Link>VidyoClient-AndroidSDK\include\csharp\CalendarManagerDefaultServices.cs</Link>
-    </Compile>
     <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\CalendarManagerFeedback.cs">
       <Link>VidyoClient-AndroidSDK\include\csharp\CalendarManagerFeedback.cs</Link>
-    </Compile>
-    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\CalendarServiceCode.cs">
-      <Link>VidyoClient-AndroidSDK\include\csharp\CalendarServiceCode.cs</Link>
     </Compile>
     <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\CalendarServiceStatus.cs">
       <Link>VidyoClient-AndroidSDK\include\csharp\CalendarServiceStatus.cs</Link>
@@ -175,9 +166,6 @@
     </Compile>
     <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\MeetingSearchResult.cs">
       <Link>VidyoClient-AndroidSDK\include\csharp\MeetingSearchResult.cs</Link>
-    </Compile>
-    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\MeetingType.cs">
-      <Link>VidyoClient-AndroidSDK\include\csharp\MeetingType.cs</Link>
     </Compile>
     <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\NetworkInterface.cs">
       <Link>VidyoClient-AndroidSDK\include\csharp\NetworkInterface.cs</Link>

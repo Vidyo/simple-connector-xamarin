@@ -117,20 +117,11 @@
     <Compile Include="..\VidyoClient-iOSSDK\include\csharp\BandwidthSummaryStats.cs">
       <Link>VidyoClient-iOSSDK\include\csharp\BandwidthSummaryStats.cs</Link>
     </Compile>
-    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\CalendarCreateResult.cs">
-      <Link>VidyoClient-iOSSDK\include\csharp\CalendarCreateResult.cs</Link>
-    </Compile>
     <Compile Include="..\VidyoClient-iOSSDK\include\csharp\CalendarFeedback.cs">
       <Link>VidyoClient-iOSSDK\include\csharp\CalendarFeedback.cs</Link>
     </Compile>
-    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\CalendarManagerDefaultServices.cs">
-      <Link>VidyoClient-iOSSDK\include\csharp\CalendarManagerDefaultServices.cs</Link>
-    </Compile>
     <Compile Include="..\VidyoClient-iOSSDK\include\csharp\CalendarManagerFeedback.cs">
       <Link>VidyoClient-iOSSDK\include\csharp\CalendarManagerFeedback.cs</Link>
-    </Compile>
-    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\CalendarServiceCode.cs">
-      <Link>VidyoClient-iOSSDK\include\csharp\CalendarServiceCode.cs</Link>
     </Compile>
     <Compile Include="..\VidyoClient-iOSSDK\include\csharp\CalendarServiceStatus.cs">
       <Link>VidyoClient-iOSSDK\include\csharp\CalendarServiceStatus.cs</Link>
@@ -239,9 +230,6 @@
     </Compile>
     <Compile Include="..\VidyoClient-iOSSDK\include\csharp\MeetingSearchResult.cs">
       <Link>VidyoClient-iOSSDK\include\csharp\MeetingSearchResult.cs</Link>
-    </Compile>
-    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\MeetingType.cs">
-      <Link>VidyoClient-iOSSDK\include\csharp\MeetingType.cs</Link>
     </Compile>
     <Compile Include="..\VidyoClient-iOSSDK\include\csharp\NetworkInterface.cs">
       <Link>VidyoClient-iOSSDK\include\csharp\NetworkInterface.cs</Link>
