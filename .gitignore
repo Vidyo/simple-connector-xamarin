@@ -21,6 +21,7 @@ VidyoClient-iOSSDK
 *.userprefs
 *.usertasks
 *.user
+.vs/
 
 # ReSharper
 *_Resharper.*
