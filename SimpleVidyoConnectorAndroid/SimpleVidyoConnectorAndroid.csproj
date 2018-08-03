@@ -209,6 +209,9 @@
     <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\MeetingAttendeesSearchResult.cs">
       <Link>VidyoClient-AndroidSDK\include\csharp\MeetingAttendeesSearchResult.cs</Link>
     </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\MeetingFeedback.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\MeetingFeedback.cs</Link>
+    </Compile>
     <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\MeetingInfo.cs">
       <Link>VidyoClient-AndroidSDK\include\csharp\MeetingInfo.cs</Link>
     </Compile>
