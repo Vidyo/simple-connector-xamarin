@@ -255,6 +255,9 @@
     <Compile Include="..\VidyoClient-iOSSDK\include\csharp\LoggerCategory.cs">
       <Link>VidyoClient-iOSSDK\include\csharp\LoggerCategory.cs</Link>
     </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\MarshalPtrToUtf8.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\MarshalPtrToUtf8.cs</Link>
+    </Compile>
     <Compile Include="..\VidyoClient-iOSSDK\include\csharp\MediaConnectionTransportInfo.cs">
       <Link>VidyoClient-iOSSDK\include\csharp\MediaConnectionTransportInfo.cs</Link>
     </Compile>
@@ -359,6 +362,9 @@
     </Compile>
     <Compile Include="..\VidyoClient-iOSSDK\include\csharp\VirtualShareManager.cs">
       <Link>VidyoClient-iOSSDK\include\csharp\VirtualShareManager.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-iOSSDK\include\csharp\VirtualWindowShare.cs">
+      <Link>VidyoClient-iOSSDK\include\csharp\VirtualWindowShare.cs</Link>
     </Compile>
   </ItemGroup>
   <ItemGroup>

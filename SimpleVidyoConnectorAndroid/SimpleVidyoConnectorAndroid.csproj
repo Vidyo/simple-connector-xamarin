@@ -15,7 +15,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -191,6 +190,9 @@
     <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\LoggerCategory.cs">
       <Link>VidyoClient-AndroidSDK\include\csharp\LoggerCategory.cs</Link>
     </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\MarshalPtrToUtf8.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\MarshalPtrToUtf8.cs</Link>
+    </Compile>
     <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\MediaConnectionTransportInfo.cs">
       <Link>VidyoClient-AndroidSDK\include\csharp\MediaConnectionTransportInfo.cs</Link>
     </Compile>
@@ -295,6 +297,9 @@
     </Compile>
     <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\VirtualShareManager.cs">
       <Link>VidyoClient-AndroidSDK\include\csharp\VirtualShareManager.cs</Link>
+    </Compile>
+    <Compile Include="..\VidyoClient-AndroidSDK\include\csharp\VirtualWindowShare.cs">
+      <Link>VidyoClient-AndroidSDK\include\csharp\VirtualWindowShare.cs</Link>
     </Compile>
   </ItemGroup>
   <ItemGroup>
