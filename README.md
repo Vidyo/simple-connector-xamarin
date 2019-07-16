@@ -1,7 +1,7 @@
-# simple-connector-xamarin
+# vidyo.io-simple-connector-xamarin
 
 ## Clone Repository
-git clone https://github.com/Vidyo/simple-connector-xamarin.git
+git clone https://github.com/Vidyo/vidyo.io-simple-connector-xamarin.git
 
 ## Overview
 The SimpleVidyoConnector solution contains two projects:
